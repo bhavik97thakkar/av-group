@@ -1754,11 +1754,20 @@
                             <span
                                 class="text-center-mob alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom Raleway-font font-size-18 text-underline">Company</span>
                             <ul class="text-center-mob">
-                                <li><a href="#" class="font-size-16 Raleway-font text-extra-dark-gray">Home</a></li>
+                                <li><a href="#home" class="font-size-16 Raleway-font text-extra-dark-gray">Home</a></li>
 
-                                <li><a href="#" class="font-size-16 Raleway-font text-extra-dark-gray">About us</a></li>
-                                <li><a href="#" class="font-size-16 Raleway-font text-extra-dark-gray">Services</a></li>
-                                <li><a href="#" class="font-size-16 Raleway-font text-extra-dark-gray">Contact us</a>
+                                <li><a href="#about" class="font-size-16 Raleway-font text-extra-dark-gray">About us</a>
+                                </li>
+                                <li><a href="#amenities"
+                                        class="font-size-16 Raleway-font text-extra-dark-gray">Amenities</a></li>
+                                <li><a href="#location"
+                                        class="font-size-16 Raleway-font text-extra-dark-gray">Location</a></li>
+                                <li><a href="#plans" class="font-size-16 Raleway-font text-extra-dark-gray">Project
+                                        Plans</a></li>
+                                <li><a href="#gallery"
+                                        class="font-size-16 Raleway-font text-extra-dark-gray">Gallery</a></li>
+                                <li><a href="#contact-us" class="font-size-16 Raleway-font text-extra-dark-gray">Contact
+                                        us</a>
                                 </li>
                             </ul>
                         </div>
@@ -1815,7 +1824,7 @@
     const parallax = document.getElementById("parallax");
 
     // Parallax Effect for DIV 1
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         let offset = window.pageYOffset;
         // parallax.style.backgroundPositionY = offset * 0.7 + "px";
         // DIV 1 background will move slower than other elements on scroll.
@@ -1837,7 +1846,7 @@
     }
 
     // Close modal when clicking outside of modal content
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const modal = document.getElementById("customModal");
         if (event.target === modal) {
             closeModal();
@@ -1845,12 +1854,12 @@
     }
 
     // Show modal automatically after 10 seconds on page load
-    window.onload = function() {
+    window.onload = function () {
         setTimeout(openModal, 10000); // Delay of 10 seconds (10000 milliseconds)
     }
 </script>
 <script>
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         const preloader = document.getElementById('preloader');
         preloader.style.display = 'none';
     });
